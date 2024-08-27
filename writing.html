@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Anna Prenowitz's writing</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <style>
+
+            .cormorant-garamond-light {
+                font-family: "Cormorant Garamond", serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+
+
+            * {
+                box-sizing: border-box;
+                /*font-family: 'Cutive Mono', serif;*/
+                color: black;
+            }
+
+            body {
+                margin: 0;
+                /*font-family: 'Cutive Mono', serif;*/
+                font-family:'Garamond';
+                cursor:none;
+            }
+
+            a:link {
+                color: black;
+                text-decoration: none;
+
+            }
+
+            a:visited {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover {
+                cursor: none;
+            }
+
+
+            .square {
+                width: 12px;
+                height: 12px;
+                border: 2px solid black;
+            }
+
+            .cursors{
+                position: fixed;
+                top:0;
+                left:0;
+                transform: translate(-50%, -50%); /* this is to center the mouse cursor */
+                pointer-events: none;
+
+                z-index: 1; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
+            }
+
+
+
+            
+            .grow-home:hover {
+                transform: scale(1.1);
+            }
+
+            .grow-home {
+                transition: .2s;
+                display: inline-block;
+            }
+
+            .grow:hover p {
+                transform: scale(1.1);
+                /*font-weight: bold;*/
+            }
+
+            .grow p {
+                transition: .2s;
+                /*transition: font-weight .2s;*/
+                display: inline-block;
+            }
+
+            #page1 {
+                height: 130vh;
+                /*width: 100vw;*/
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            #name {
+                /*height: 100vh;*/
+                /*width: 100%;*/
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-left: 5%;
+                padding-top: 0%;
+                /*font-family: 'Garamond';*/
+                font-weight: 500;
+                font-size: 35px;
+            }
+
+            #title-sec {
+                width: 100%;
+                height: 100%;
+                display: flex;
+
+                /*align-self: flex-end;*/
+                align-self: end;
+
+                /*align-items: flex-start;*/
+                justify-content:end;
+                font-size: 10em;
+                margin-top: 5%;
+                /*background-color: blue;*/
+            }
+
+            #title-sec h2 {
+                margin-right: 5%;
+            }
+
+            #page2 {
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                /*background-color: green;*/
+
+            }
+
+            #rows-cont {
+                width: 100%;
+                margin-top: 10%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+
+            .rows {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                width: 70%;
+                justify-self: flex-end;
+            }
+
+            #row1 {
+                
+                /*margin-top: 10%;*/
+                
+            }
+
+            .text p {
+                /*padding: 5%;*/
+            }
+
+            .col1 {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                margin-right: 5%;
+            }
+            .col2 {
+                width: 25%;
+            }
+            .col3 {
+                width: 25%;
+                margin-right: 5%;
+            }
+
+
+
+
+
+
+            @media screen and (max-width: 800px) {
+
+                #page1 {
+                    height: 100vh;
+                }
+
+                #title-sec {
+                    font-size: 5em;
+                    align-items: flex-end;
+                }
+
+                #title-sec h2 {
+                    margin-bottom: 7%;
+                }
+
+                #rows-cont {
+                    margin-top: 20%;
+                    /*justify-content: center;
+                    justify-items: center;
+                    align-content: center;*/
+                    align-items: center;
+                }
+
+                .rows {
+                    width: 90%;
+                    /*align-items: flex-start;*/
+                    justify-content: flex-start;
+                    /*justify-content: left;*/
+                    /*justify-items: flex-start;
+                    justify-items: left;*/
+
+                }
+
+                .col1 {
+                    /*align-self: flex-start;*/
+                    width: 45%;
+                }
+
+                .col3 {
+                    margin-right: 0;
+                    width: 50%;
+
+                }
+            }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="cursors square" data-cursor-dot></div>
+
+        <div id="page1">
+            <div id="name"><p><a href="index.html">Anna Prenowitz</a></p></div>
+            <div id="title-sec">
+                <!--<h2>Writing, creative and academic, Anna writes about whatever she wants whenever she wants.</h2>-->
+                <!--<h2>Anna has decided the only way not to be afraid of people seeing her work is to show it.</h2>-->
+                <h2>Writing</h2>
+            </div>
+            
+        </div>
+        <div id="page2">
+            <div id="rows-cont">
+                <div class="rows" id="row1">
+                    <p class="col1">Essays</p>
+                    <p class="col2">31.08.23</p>
+                    <div class="col3"><p><a href="writing/Pre-postmodernism.pdf">Pre-postmodernism</a></p></div>
+                </div>
+            
+                <!--
+                <div class="rows">
+                    <p class="col1"></p>
+                    <p class="col2">24.02.23</p>
+                    <div class="col3"><p><a href="pre_postmodernism.html">Something else</a></p></div>
+                </div>
+                <div class="rows">
+                    <p class="col1"></p>
+                    <p class="col2">16.01.23</p>
+                    <div class="col3"><p><a href="pre_postmodernism.html">Another one wow</a></p></div>
+                </div>
+                -->
+                <div class="rows">
+                    <p class="col1">Creative writing</p>
+                    <p class="col2">06.01.24</p>
+                    <div class="col3"><p><a href="writing/A Trial.pdf">A Trial</a></p></div>
+                </div>
+                <div class="rows">
+                    <p class="col1"><!--<hr>--></p>
+                    <p class="col2">06.05.24</p>
+                    <div class="col3"><p><a href="writing/Bingo.pdf">Bingo</a></p></div>
+                </div>
+                <!--
+                <div class="rows">
+                    <p class="col1">Poems</p>
+                    <p class="col2">30.01.24</p>
+                    <div class="col3"><p class="grow col3"><a href="feeling.html">Feeling</a></p></div>
+                </div>
+                <div class="rows">
+                    <p class="col1"></p>
+                    <p class="col2">02.02.24</p>
+                    <div class="col3"><p><a href="a_conversion.html">A Conversion</a></p></div>
+                </div>
+                <div class="rows">
+                    <p class="col1"></p>
+                    <p class="col2">02.02.24</p>
+                    <div class="col3"><p><a href="rain.html">Rain</a></p></div>
+                </div>
+                <div class="rows">
+                    <p class="col1"></p>
+                    <p class="col2">07.02.24</p>
+                    <div class="col3"><p><a href="walls.html">Walls</a></p></div>
+                </div>
+                <div class="rows">
+                    <p class="col1"></p>
+                    <p class="col2">25.02.24</p>
+                    <div class="col3"><p><a href="looking.html">Looking</a></p></div>
+                </div>
+                -->
+            </div>
+        </div>
+        <script>
+
+            const cursorDot = document.querySelector("[data-cursor-dot]");
+            const cursorTriangle = document.querySelector("[data-cursor-triangle]");
+            window.addEventListener("mousemove", function(e) {
+                const posX = e.clientX;
+                const posY = e.clientY;
+
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+
+                cursorTriangle.style.left = `${posX}px`;
+                cursorTriangle.style.top = `${posY}px`;
+            })
+
+        </script>
+    </body>
+</html>

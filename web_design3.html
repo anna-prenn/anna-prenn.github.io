@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Anna Prenowitz</title>
+        <meta charset="utf-8">
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.typekit.net/gjh3whg.css">
+        <style>
+            
+            
+            .cormorant-garamond-light {
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 300;
+            font-style: normal;
+            }
+            
+
+            
+            * {
+                box-sizing: border-box;
+                /*font-family: 'Cutive Mono', serif;*/
+            }
+
+            body {
+                margin: 0;
+                /*font-family: 'Cutive Mono', serif;*/
+                font-family: 'Garamond';
+                cursor: none;
+            }
+                
+
+            a:link {
+                color: black;
+                text-decoration: none;
+
+            }
+
+            a:visited {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover {
+                cursor: none;
+            }
+
+            .square {
+                width: 12px;
+                height: 12px;
+                border: 2px solid black;
+            }
+
+            .cursors{
+                position: fixed;
+                top:0;
+                left:0;
+                transform: translate(-50%, -50%); /* this is to center the mouse cursor */
+                pointer-events: none;
+
+                z-index: 1; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
+            }
+
+
+
+
+
+
+            #page1 {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            #name {
+                font-family: 'Garamond';
+                font-weight: 500;
+                font-size: 35px;
+                align-self: end;
+                margin-right: 5%;
+            }
+
+            #sites-cont {
+                margin-top: 30%;
+            }
+
+            .sites {
+                display: flex;
+                flex-direction: row;
+                justify-self: end;
+                margin-left: 10%;
+            }
+
+
+
+            .line {
+                border-bottom: 1px solid black;
+                /*margin-top: 5px;*/
+                width: 30%;
+                height: 31px;
+            }
+
+            p {
+                line-height:20px
+            }
+
+
+
+
+
+
+            @media screen and (max-width: 800px) {
+
+                #sites-cont {
+                    height: 100%;
+                    align-content: flex-end;
+                    margin-bottom: 10%;
+                }
+            }
+
+
+
+            
+
+            
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="cursors square" data-cursor-dot></div>
+
+
+        <div id="page1">
+            <p id="name"><a href="home_again2.html">Anna Prenowitz</a></p>
+            <div id="sites-cont">
+                <div class="sites" id="site1">
+                    <div class="line"></div>
+                    <p><a href="home_again2.html">  This site.</a></p>
+                </div>
+                <div class="sites" id="site2">
+                    <div class="line"></div>
+                    <p>  Coming soon.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--JavaScript!-->
+        <script>
+
+            const cursorDot = document.querySelector("[data-cursor-dot]");
+            const cursorTriangle = document.querySelector("[data-cursor-triangle]");
+            window.addEventListener("mousemove", function(e) {
+                const posX = e.clientX;
+                const posY = e.clientY;
+
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+
+                cursorTriangle.style.left = `${posX}px`;
+                cursorTriangle.style.top = `${posY}px`;
+            })
+
+
+
+
+
+
+
+
+        </script>
+
+    </body>
+
+
+
+
+
+</html>
+
+

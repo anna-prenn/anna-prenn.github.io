@@ -162,8 +162,15 @@
             
             @media screen and (max-width: 800px) {
 
+                .body {
+                    cursor: default;
+                }
+                .square {
+                    border: none;
+                }
+
                 #page1 {
-                    height: 120vh;
+                    height: 100vh;
                 }
                 
                 #writing-pg1 {
@@ -172,24 +179,27 @@
 
                 #writing-header, #menu-cont {
                     position: static;
-                    margin-left: 10%;
+                    top: 5%;
+                    margin-left: 5%;
+                    margin-bottom: 5%;
                     
                 }
 
                 #menu-cont {
-                    margin-right: 10%;
+                    margin-right: 5%;
                     text-align:end;
                 }
 
                 #writing-header {
                     margin-bottom: 0;
-                    height: 10%;
+                    /*height: 10%;*/ /*CHANGED THIS MIGHT BE WEIRD*/
+                    font-size: 40px;
                 }
 
                 #writing-pg1 img {
                     padding-top:0;
-                    width: 80%;
-                    margin-left: 10%;
+                    width: 90%;
+                    margin-left: 5%;
                 }
             }
                 

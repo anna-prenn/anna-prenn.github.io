@@ -192,18 +192,33 @@
                     justify-content: center;
                 }
 
+                #menu-cont {
+                    background-color: yellow;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.5s ease-out;
+                    list-style-type: none;
+                }
 
-
-
-
-
-                #writing-header, #menu-cont {
-                    position: static;
-                    top: 5%;
-                    margin-left: 5%;
-                    margin-bottom: 5%;
+                .menu {
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
                     
                 }
+
+
+
+
+
+
+
+
+
+
+                
 
                 #menu-cont {
                     margin-right: 5%;
@@ -211,11 +226,15 @@
                 }
 
                 #writing-header {
+                    position: static;
                     margin-bottom: 0;
                     /*height: 10%;*/ /*CHANGED THIS MIGHT BE WEIRD*/
                     font-size: 30px;
                     font-weight: 300;
                     color: red;
+                    top: 5%;
+                    margin-left: 5%;
+                    margin-bottom: 5%;
                 }
 
                 #writing-pg1 img {

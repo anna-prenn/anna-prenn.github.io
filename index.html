@@ -106,6 +106,7 @@
                 position: absolute;
                 top: 10%;
                 left: 5%;
+                
             }
 
             #menu-cont {
@@ -177,6 +178,22 @@
                     position: static;
                 }
 
+                #top-phone {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    background-color: green;
+                }
+
+                #icon {
+                    
+                }
+
+
+
+
+
+
                 #writing-header, #menu-cont {
                     position: static;
                     top: 5%;
@@ -193,13 +210,19 @@
                 #writing-header {
                     margin-bottom: 0;
                     /*height: 10%;*/ /*CHANGED THIS MIGHT BE WEIRD*/
-                    font-size: 40px;
+                    font-size: 30px;
+                    font-weight: 300;
+                    color: red;
                 }
 
                 #writing-pg1 img {
                     padding-top:0;
                     width: 90%;
                     margin-left: 5%;
+                }
+
+                #footer {
+                    margin-bottom:0;
                 }
             }
                 
@@ -221,7 +244,7 @@
 
         <div id="page1">
             <div id="writing-pg1">
-                <p id="writing-header">Anna<br>Prenowitz<br><br><br></p>
+                <div id="top-phone"><p id="writing-header">Anna<br>Prenowitz<br><br><br></p><span id="icon" onclick="menu(this)">+</span></div>
                 <img id="img_pg1" src="images/bathroom_43.JPG">
                 <div id="menu-cont">
                     <p class="menu"><a href="writing.html">Writing</a></p>
@@ -288,6 +311,25 @@
         }
 
         window.addEventListener("scroll", reveal);
+
+
+
+
+        // reveal menu on phone
+        var x=0;
+        var element = document.getElementById("menu-cont");
+        function menu(icon) {
+            if(x==0) {
+                icon.style.transform = "rotate(45dec)";
+                element.style.left = '50%';
+                x=1;
+            }
+            else {
+                icon.style.transform = "rotate(0deg)";
+                element.style.left = '-50%';
+                x=0;
+            }
+        }
 
 
 

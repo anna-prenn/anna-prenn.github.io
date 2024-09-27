@@ -109,7 +109,7 @@
                 
             }
 
-            #menu-cont {
+            #menucont {
                 position: absolute;
                 left: 5%;
                 top: 42%;
@@ -206,7 +206,7 @@
                     z-index: 6;
                 }
 
-                #menu-cont {
+                #menucont {
                     background-color: yellow;
                     position: absolute;
                     height: 100vh;
@@ -294,7 +294,7 @@
             <div id="writing-pg1">
                 <div id="top-phone"><p id="writing-header">Anna<br>Prenowitz</p><div id="span-cont"><span id="icon" onclick="menu(this)">+</span></div></div>
                 <img id="img_pg1" src="images/bathroom_43.JPG">
-                <div id="menu-cont">
+                <div id="menucont">
                     <p class="menu"><a href="writing.html">Writing</a></p>
                     <p class="menu"><a href="travel.html">Photography</a></p>
                     <!--<p class="menu"><a href="video2.html">Film</a></p>-->
@@ -365,8 +365,8 @@
 
         // reveal menu on phone
         var x=0;
-        var element = document.getElementById("menu-cont");
-        function menu(icon) {
+        var element = document.getElementById("menucont");
+        function menucont(icon) {
             if(x==0) {
                 icon.style.transform = "rotate(45dec)";
                 element.style.left = '50%';

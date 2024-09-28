@@ -211,7 +211,7 @@
                     font-weight: 300;
                     z-index: 6;
                     display: inline-block;
-                    color: white;
+                    /*color: white;*/
 
                     transition: 0.5s; /*the JS rotation!*/
                 }
@@ -405,11 +405,13 @@
             if(x==0) {
                 icon.style.transform = "rotate(45deg)";
                 element.style.left = '50%';
+                icon.style.color = "white";
                 x=1;
             }
             else {
                 icon.style.transform = "rotate(0deg)";
                 element.style.left = '-50%';
+                icon.style.color = "black";
                 x=0;
             }
         }

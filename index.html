@@ -343,15 +343,15 @@
 
 
 
+            /*
             const dropdownBtn = document.querySelector(".dropdown-btn");
             const dropdownContent = document.querySelector(".dropdown-content");
 
-            // add click event to dropdown button
             dropdownBtn.addEventListener("click", () => {
-                // add open styles to menu element
                 dropdownContent.classList.toggle("menu-open");
                 dropdownBtn.setAttribute("aria-expanded",dropdownBtn.getAttribute("aria-expanded") === "true" ? "false" : "true");
             });
+            */
 
             function reveal() {
             var reveals = document.querySelectorAll(".reveal");
@@ -379,7 +379,7 @@
         var element = document.getElementById("menucont");
         function menucont(icon) {
             if(x==0) {
-                icon.style.transform = "rotate(45dec)";
+                icon.style.transform = "rotate(45deg)";
                 element.style.left = '50%';
                 x=1;
             }

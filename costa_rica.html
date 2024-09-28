@@ -18,12 +18,10 @@
 
     * {
         box-sizing: border-box;
-        font-family: 'Garamond';
     }
 
     body {
         margin: 0;
-        font-family: 'Garamond';
         cursor:none;
     }
 
@@ -111,7 +109,6 @@
         font-size: 15px;
         font-weight: 50;
         letter-spacing:.01cm;
-        font-family: 'Garamond';
         font-weight: 200;
         font-style: normal;
         flex-direction: row;
@@ -120,7 +117,6 @@
 
     #name {
 
-        font-family: 'Garamond';
         font-weight: 500;
         font-size: 30px;
         margin-right: 7%;
@@ -270,19 +266,10 @@
 
     <div id="page1">
 
-        <div id="name_cont">
+        <!--<div id="name_cont">
             <a class="p-pg1" id="name" href="index.html">Anna Prenowitz</a>
-            
-            <!--
-            <div id="para-pg1">
-                <div><a class="p-pg1" id="name" href="home_again.html">Anna Prenowitz</a></div>
-                <div><a class="p-pg1" href="travel.html"><b>Travel, 2022</b></a></div>
-                <div><a class="p-pg1" href="leeds_carnival.html">Leeds Carnival, 2023</a></div>
-                <div><a class="p-pg1" href="lunarnewyear.html">Lunar new year, 2024</a></div>
-                <div><a class="p-pg1" href="costa_rica.html">Costa Rica, 2024</a></div>
-            </div>
-            -->
-        </div>
+        </div>-->
+        <div id="top-phone"><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div><p id="writing-header">Anna<br>Prenowitz</p></div>
 
         <div id="slideshow">
             <div class="img-content">
@@ -365,6 +352,25 @@
             }
             x[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " w3-red";
+        }
+
+
+        // reveal menu on phone
+        var x=0;
+        var element = document.getElementById("menucont");
+        function menucont(icon) {
+            if(x==0) {
+                icon.style.transform = "rotate(45deg)";
+                element.style.left = '50%';
+                icon.style.color = "white";
+                x=1;
+            }
+            else {
+                icon.style.transform = "rotate(0deg)";
+                element.style.left = '-50%';
+                icon.style.color = "black";
+                x=0;
+            }
         }
     </script>
 

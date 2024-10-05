@@ -1,260 +1,189 @@
 <!DOCTYPE html>
-<html>
-<title>Anna Prenowitz Costa Rica</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="en">
+    <head>
+        <title>Anna Prenowitz</title>
+        <!--<meta charset="utf-8">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<style>
 
-
-    .cormorant-garamond-light {
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 300;
-        font-style: normal;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        cursor:none;
-    }
-
-    .square {
-        width: 12px;
-        height: 12px;
-        border: 2px solid black;
-    }
-
-
-
-    .cursors{
-        position: fixed;
-        top:0;
-        left:0;
-        transform: translate(-50%, -50%); /* this is to center the mouse cursor */
-        pointer-events: none;
-
-        z-index: 1; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
-    }
-
-
-
-    a:link {
-        color: black;
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: black;
-        text-decoration: none;
-    }
-
-    a:hover {
-        cursor: none;
-    }
-
-
-
-
-
-
-
-
-
-
-
-    .mySlides {
-        display:none;
-    }
-
-    .img-content {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .img-content img {
-        width: 100%;
-        height: auto;
-    }
-
-    #page1 {
-        height: 180vh;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-
-    #name_cont {
-        height: 3%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-
-
-        margin-top: 2%;
-        opacity: 100%;
-        font-size: 15px;
-        font-weight: 50;
-        letter-spacing:.01cm;
-        font-weight: 200;
-        font-style: normal;
-        flex-direction: row;
-    }
-
-
-    #name {
-
-        font-weight: 500;
-        font-size: 30px;
-        margin-right: 7%;
-    }
-
-
-    #slideshow {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        margin-top: 1%;
-        justify-self: center;
-    }
-
-
-
-    .container {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-top: .4em;
-        /*margin: 5em;*/
-        margin-right: 2%;
-    }
-
-    #menu {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-        
-    }
-
-    #footer {
-        margin-top: 17%;
-        margin-bottom: 2%;
-    }
-
-    #footer hr {
-        width: 75%;
-    }
-
-
-    .sub-item {
-        border: none;
-        font-size: 20px;
-        background-color: white;
-        display: inline-block;
-    }
-
-    .sub-item:hover {
-        cursor: none;
-    }
-
-
-
-    /*
-    .sub-item:hover {
-        cursor:pointer;
-    }
-    */
-
-    .triangle {
-        /*position: relative;*/
-        transform: scale(var(--ggs,.7));
-        width: 22px;
-        height: 17px;
-        border-left: 3px solid transparent;
-        border-bottom: 3px solid;
-    }
-    .triangle,
-    .triangle::before {
-        /*display: block;*/
-        box-sizing: border-box;
-        border-right: 2px solid transparent;
-    }
-    .triangle::before {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-left: 2px solid;
-        border-top: 2px solid;
-        border-bottom: 2px solid transparent;
-        transform: rotate(45deg) skew(10deg,10deg);
-        left: -2px;
-        bottom: -13px;
-    }
-
-
-
-
-    @media screen and (max-width: 800px) {
-
-        #page1 {
-            height: 100vh;
-        }
-        .square {
-            border: none;
-        }
-
-        #name_cont {
-            height: 5%;
-        }
-
-        #menu {
-            display: flex;
-            flex-direction: column;
-            justify-content:space-evenly;
-            margin-left: 5%;
+        <link rel="stylesheet" href="https://use.typekit.net/gjh3whg.css">
+        <style>
             
-        }
+            
+            .cormorant-garamond-light {
+                font-family: "Cormorant Garamond", serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+            
 
-        #footer {
-            margin-top: 20%;
-            margin-bottom: 5%;
-            height: 100%;
-            align-self: bottom;
-            justify-self: bottom;
-            /*align-items: flex-end;*/
-            align-content: flex-end;
-            /*justify-items: flex-end;
-            justify-content: flex-end;*/
-        }
+            
+            * {
+                box-sizing: border-box;
+                /*font-family: 'Cutive Mono', serif;*/
+            }
 
-        #menu div {
-            margin-bottom: 2%;
-        }
+            body {
+                margin: 0;
+                /*font-family: 'Cutive Mono', serif;*/
+                cursor: none;
+            }
+                
+
+            a:link {
+                color: black;
+                text-decoration: none;
+
+            }
+
+            a:visited {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover {
+                cursor: none;
+            }
+
+            .square {
+                width: 12px;
+                height: 12px;
+                border: 2px solid black;
+            }
+
+            .cursors{
+                position: fixed;
+                top:0;
+                left:0;
+                transform: translate(-50%, -50%); /* this is to center the mouse cursor */
+                pointer-events: none;
+
+                z-index: 1; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
+            }
 
 
 
 
 
 
-        #top-phone {
+
+            #page1 {
+                color: black;
+                height: 140vh;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+
+                justify-content: space-between;
+            }
+
+            #page1 img {
+                width: 75%;
+                height: auto;
+                /*margin: 10%;*/
+                margin-top: 4%;
+                align-self: center;
+            }
+
+            
+
+            #writing-pg1 img {
+                align-self: center;
+                /*position: absolute;*/
+                margin-left: 12.5%;
+
+            }
+
+            /*#writing-pg1 {
+                position: absolute;
+                top: 10%;
+                left: 5%;
+            }*/
+
+            #writing-header {
+                position: absolute;
+                top: 10%;
+                left: 5%;
+                
+            }
+
+            #menucont {
+                position: absolute;
+                left: 5%;
+                top: 42%;
+            }
+
+
+
+            
+
+            .menu {
+                opacity: 100%;
+                font-size: 15px;
+                font-weight: 50;
+                letter-spacing:.01cm;
+                /*font-family:'Times New Roman', Times, serif;*/
+                /*font-family: "brandon-grotesque", sans-serif;*/
+                /*font-family: 'Garamond';*/
+                font-weight: 200;
+                font-style: normal;
+            }
+
+            #writing-header {
+                /*font-family: 'Garamond';*/
+                font-weight: 500;
+                font-size: 35px;
+            }
+
+            #page1 hr {
+                width: 75%;
+                align-self: center;
+            }
+
+            #footer {
+                margin-top: 9%;
+            }
+
+            #footer p {
+                position: absolute;
+                margin-bottom: 500px;
+                margin-left: 12.5%;
+                /*height: 100%;*/
+                margin-top: 0;
+            }
+
+
+
+
+
+
+
+
+            /*resize for phone*/
+            
+            @media screen and (max-width: 800px) {
+
+                .body {
+                    cursor: default;
+                }
+                .square {
+                    border: none;
+                }
+
+                #page1 {
+                    height: 100vh;
+                }
+                
+                #writing-pg1 {
+                    height: 100%;
+
+                    position: static;
+                }
+
+                #top-phone {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -270,6 +199,7 @@
 
                     justify-content: right;
                     margin-right: 5%;
+                    
 
                 }
 
@@ -335,8 +265,7 @@
                 .menu:hover::before {
                     transform: scale(15);
                 }
-    }
-    
+                
 
 
 
@@ -346,78 +275,117 @@
 
 
 
+                
 
-</style>
-<body>
 
-    <!--<div class="cursors triangle" data-cursor-triangle></div>-->
 
-    <div class="cursors square" data-cursor-dot></div>
+                #writing-header {
+                    /*making sure the settings from laptop aren't affecting it*/
+                    top: 0;
+                    left: 0;
+                    margin-top: 0;
+                    margin-bottom: 0;
 
-    <div id="page1">
+                    position: static;
+                    /*height: 10%;*/ /*CHANGED THIS MIGHT BE WEIRD*/
+                    font-size: 30px;
+                    font-weight: 300;
+                    margin-left: 5%;
 
-        <!--<div id="name_cont">
-            <a class="p-pg1" id="name" href="index.html">Anna Prenowitz</a>
-        </div>-->
-        <div id="top-phone"><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div><p id="writing-header">Anna<br>Prenowitz</p></div>
 
-        <div id="slideshow">
-            <div class="img-content">
-                <img class="mySlides" src="images/sausages.png">
-                <img class="mySlides" src="images/another counter.png">
-                <img class="mySlides" src="images/balloon.png">
-                <!--<img class="mySlides" src="images/central market.png">-->
-                <img class="mySlides" src="images/ducks.png">
-                <img class="mySlides" src="images/makeup.png">
+                }
+
+                #writing-pg1 img {
+                    padding-top:0;
+                    width: 90%;
+                    margin-left: 5%;
+                    
+                    margin-top: 100%;
+                }
+
+                #footer {
+                    margin-bottom: 40%;
+                }
+                #footer hr {
+                    width: 90%;
+                    margin-left: 5%;
+                }
+                #footer p {
+                margin-left: 5%;
+            }
+                
+            }
+                
+
+            
+
+
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="cursors square" data-cursor-dot></div>
+
+        <div id="page1">
+            <div id="writing-pg1">
+                <div id="top-phone"><p id="writing-header">Anna<br>Prenowitz</p><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div></div>
+                
+                <div class="img-content">
+                    <img class="mySlides" src="images/sausages.png">
+                    <img class="mySlides" src="images/another counter.png">
+                    <img class="mySlides" src="images/balloon.png">
+                    <!--<img class="mySlides" src="images/central market.png">-->
+                    <img class="mySlides" src="images/ducks.png">
+                    <img class="mySlides" src="images/makeup.png">
+                </div>
+                
+                <div id="menucont">
+                    <p class="menu"><a href="writing.html">Writing</a></p>
+                    <p class="menu"><a href="travel.html">Photography</a></p>
+                    <!--<p class="menu"><a href="video2.html">Film</a></p>-->
+                    <p class="menu"><a href="coming_soon.html">Film</a></p>
+                    <p class="menu"><a href="web_design3.html">Web design</a></p>
+                    <!--<p class="menu"><a href="../../../../important things/CVs/2024 july/artistic/Anna Prenowitz Artistic Resume.pdf">Artistic resume</a></p>-->
+                </div>
             </div>
-            <div class="container">
-                <button class="sub-item" onclick="plusDivs(-1)"> < </button>
-                <button class="sub-item" onclick="plusDivs(1)"> > </button>
+            <div id="footer">
+                <hr>
+                <p><a href="mailto:annaprenowitz@gmail.com">Email me.</a></p>
             </div>
         </div>
 
-        <div id="footer">
-            
-            <div id="menu menucont">
-                <div class="menu"><a href="travel.html">Travel, 2022</a></div>
-                <div class="menu"><a href="leeds_carnival2.html">Leeds Carnival, 2023</a></div>
-                <div class="menu"><a href="lunarnewyear2.html">Lunar new year, 2024</a></div>
-                <div class="menu"><a href="costa_rica.html"><b>Costa Rica, 2024</b></a></div>
-                <div class="menu"><a href="self_portraits.html">Self Portraits, 2024</a></div>
-            </div>
-            
-        </div>
-
-    
-    </div>
 
 
-    <script>
 
-        const cursorDot = document.querySelector("[data-cursor-dot]");
-        const cursorTriangle = document.querySelector("[data-cursor-triangle]");
-        window.addEventListener("mousemove", function(e) {
-            const posX = e.clientX;
-            const posY = e.clientY;
 
-            cursorDot.style.left = `${posX}px`;
-            cursorDot.style.top = `${posY}px`;
+        <!--JavaScript!-->
+        <script>
 
-            cursorTriangle.style.left = `${posX}px`;
-            cursorTriangle.style.top = `${posY}px`;
-        })
+            const cursorDot = document.querySelector("[data-cursor-dot]");
+            const cursorTriangle = document.querySelector("[data-cursor-triangle]");
+            window.addEventListener("mousemove", function(e) {
+                const posX = e.clientX;
+                const posY = e.clientY;
 
-        
-        
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+
+                cursorTriangle.style.left = `${posX}px`;
+                cursorTriangle.style.top = `${posY}px`;
+            })
 
 
 
 
 
-
-
-
-        var slideIndex = 1;
+            //slideshow
+            var slideIndex = 1;
         showDivs(slideIndex);
 
         function plusDivs(n) {
@@ -430,39 +398,84 @@
 
         function showDivs(n) {
             var i;
-            var x = document.getElementsByClassName("mySlides");
+            var y = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("demo");
-            if (n > x.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
+            if (n > y.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = y.length}
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";  
             }
-            for (i = 0; i < dots.length; i++) {
+            for (y = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" w3-red", "");
             }
-            x[slideIndex-1].style.display = "block";  
+            y[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " w3-red";
         }
 
 
+
+
+            /*
+            const dropdownBtn = document.querySelector(".dropdown-btn");
+            const dropdownContent = document.querySelector(".dropdown-content");
+
+            dropdownBtn.addEventListener("click", () => {
+                dropdownContent.classList.toggle("menu-open");
+                dropdownBtn.setAttribute("aria-expanded",dropdownBtn.getAttribute("aria-expanded") === "true" ? "false" : "true");
+            });
+            */
+
+            function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+
+
+
         // reveal menu on phone
-        var y=0;
+        var x=0;
         var element = document.getElementById("menucont");
         function menucont(icon) {
-            if(y==0) {
+            if(x==0) {
                 icon.style.transform = "rotate(45deg)";
                 element.style.left = '50%';
                 icon.style.color = "white";
-                y=1;
+                x=1;
             }
             else {
                 icon.style.transform = "rotate(0deg)";
                 element.style.left = '-50%';
                 icon.style.color = "black";
-                y=0;
+                x=0;
             }
         }
-    </script>
 
-</body>
+
+
+
+
+        </script>
+
+    </body>
+
+
+
+
+
 </html>
+
+

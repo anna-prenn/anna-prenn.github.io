@@ -18,6 +18,11 @@
                 font-weight: 300;
                 font-style: normal;
             }
+
+            button {
+                font-family: "Cormorant Garamond", serif;
+                font-weight: 500;
+            }
             
 
             
@@ -78,7 +83,7 @@
             .container {
                 display: flex;
                 justify-content: right;
-                margin-right: 15%;
+                margin-right: 6%;
             }
 
 
@@ -89,7 +94,7 @@
 
             #page1 {
                 color: black;
-                height: 140vh;
+                height: 160vh;
                 width: 100vw;
                 display: flex;
                 flex-direction: column;
@@ -162,7 +167,6 @@
                 letter-spacing:.01cm;
                 /*font-family:'Times New Roman', Times, serif;*/
                 /*font-family: "brandon-grotesque", sans-serif;*/
-                /*font-family: 'Garamond';*/
                 font-weight: 200;
                 font-style: normal;
             }
@@ -173,18 +177,19 @@
             }
 
             #page1 hr {
-                width: 75%;
+                width: 90%;
                 align-self: center;
             }
 
             #footer {
-                margin-top: 9%;
+                /*margin-top: 8%;*/
+                margin-bottom: 3%;
             }
 
             #footer p {
                 position: absolute;
                 margin-bottom: 500px;
-                margin-left: 12.5%;
+                margin-left: 5%;
                 /*height: 100%;*/
                 margin-top: 0;
             }
@@ -344,15 +349,9 @@
                 }
 
                 #footer {
-                    margin-bottom: 40%;
+                    display: none;
                 }
-                #footer hr {
-                    width: 90%;
-                    margin-left: 5%;
-                }
-                #footer p {
-                margin-left: 5%;
-            }
+                
                 
             }
                 
@@ -382,17 +381,17 @@
                     <img class="mySlides" src="images/another counter.png">
                 </div>
                 <div class="container">
-                    <button class="sub-item" onclick="plusDivs(-1)"> < </button>
-                    <button class="sub-item" onclick="plusDivs(1)"> > </button>
+                    <button class="sub-item" onclick="plusDivs(-1)"> previous </button>
+                    <button class="sub-item" onclick="plusDivs(1)"> next </button>
                 </div>
+                <!--
                 <div id="menucont">
                     <p class="menu"><a href="writing.html">Writing</a></p>
                     <p class="menu"><a href="travel.html">Photography</a></p>
-                    <!--<p class="menu"><a href="video2.html">Film</a></p>-->
                     <p class="menu"><a href="coming_soon.html">Film</a></p>
                     <p class="menu"><a href="web_design3.html">Web design</a></p>
-                    <!--<p class="menu"><a href="../../../../important things/CVs/2024 july/artistic/Anna Prenowitz Artistic Resume.pdf">Artistic resume</a></p>-->
                 </div>
+                -->
             </div>
             <div id="footer">
                 <hr>

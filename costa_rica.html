@@ -155,6 +155,10 @@
                 margin-top: 0;
             }
 
+            #icon {
+                display: none;
+            }
+
 
 
 
@@ -335,16 +339,12 @@
         <div id="page1">
             <div id="writing-pg1">
                 <div id="top-phone"><p id="writing-header">Anna<br>Prenowitz</p><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div></div>
-                
-                <div class="img-content">
-                    <img class="mySlides" src="images/sausages.png">
-                    <img class="mySlides" src="images/another counter.png">
-                    <img class="mySlides" src="images/balloon.png">
-                    <!--<img class="mySlides" src="images/central market.png">-->
-                    <img class="mySlides" src="images/ducks.png">
-                    <img class="mySlides" src="images/makeup.png">
+                <img class="mySlides" id="img_pg1" src="images/bathroom_43.JPG">
+                <img class="mySlides" src="images/museum_43.JPG">
+                <div class="container">
+                    <button class="sub-item" onclick="plusDivs(-1)"> < </button>
+                    <button class="sub-item" onclick="plusDivs(1)"> > </button>
                 </div>
-                
                 <div id="menucont">
                     <p class="menu"><a href="writing.html">Writing</a></p>
                     <p class="menu"><a href="travel.html">Photography</a></p>
@@ -379,38 +379,6 @@
                 cursorTriangle.style.left = `${posX}px`;
                 cursorTriangle.style.top = `${posY}px`;
             })
-
-
-
-
-
-            //slideshow
-            var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var y = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > y.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = y.length}
-            for (i = 0; i < y.length; i++) {
-                y[i].style.display = "none";  
-            }
-            for (y = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-red", "");
-            }
-            y[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " w3-red";
-        }
 
 
 
@@ -468,6 +436,35 @@
 
 
 
+
+
+            // JS for changing slides...
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-red", "");
+                }
+                x[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " w3-red";
+            }
         </script>
 
     </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Anna Prenowitz's writing</title>
+        <title>Anna Prenowitz — Writing</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
 
@@ -65,33 +65,16 @@
 
 
             
-            .grow-home:hover {
-                transform: scale(1.1);
-            }
-
-            .grow-home {
-                transition: .2s;
-                display: inline-block;
-            }
-
-            .grow:hover p {
-                transform: scale(1.1);
-                /*font-weight: bold;*/
-            }
-
-            .grow p {
-                transition: .2s;
-                /*transition: font-weight .2s;*/
-                display: inline-block;
-            }
+            
 
             #page1 {
-                height: 130vh;
+                height: 100vh;
                 /*width: 100vw;*/
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                justify-content: flex-start;
+                /*justify-content: flex-start;*/
+                justify-content: space-between;
             }
 
             #name {
@@ -125,14 +108,7 @@
                 margin-right: 5%;
             }
 
-            #page2 {
-                height: 100vh;
-                width: 100vw;
-                display: flex;
-                flex-direction: column;
-
-                
-            }
+            
 
             #rows-cont {
                 width: 100%;
@@ -142,17 +118,27 @@
                 flex-direction: column;
                 justify-content: flex-end;
                 align-items: flex-end;
+                margin-bottom: 10%;
+            }
+
+            #rows-cont hr {
+                width: 55%;
+                margin-left: 35%;
+                margin-bottom: 0;
+                padding-bottom: 0;
             }
 
             .rows {
-                margin-top: 1em;
-                margin-bottom: 1em;
+                /*margin-top: 1em;
+                margin-bottom: 1em;*/
+                margin-bottom: 1%;
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-end;
+                /*justify-content: flex-end;*/
+                justify-content: space-between;
 
                 width: 70%;
-                justify-self: flex-end;
+                /*justify-self: flex-end;*/
             }
 
             #row1 {
@@ -240,35 +226,18 @@
 
         <div class="cursors square" data-cursor-dot></div>
 
-        <!--
+        
         <div id="page1">
             <div id="name"><p><a href="index.html">Anna Prenowitz</a></p></div>
-            <div id="title-sec">
-                
-                <h2>Writing</h2>
-            </div>
-        -->
-        </div>
-        <div id="page2">
+        
             <div id="rows-cont">
+                
                 <div class="rows" id="row1">
                     <p class="col1">Essays</p>
                     <p class="col2">31.08.23</p>
                     <div class="col3"><p><a href="writing/Pre-postmodernism.pdf">Pre-postmodernism</a></p></div>
                 </div>
-            
-                <!--
-                <div class="rows">
-                    <p class="col1"></p>
-                    <p class="col2">24.02.23</p>
-                    <div class="col3"><p><a href="pre_postmodernism.html">Something else</a></p></div>
-                </div>
-                <div class="rows">
-                    <p class="col1"></p>
-                    <p class="col2">16.01.23</p>
-                    <div class="col3"><p><a href="pre_postmodernism.html">Another one wow</a></p></div>
-                </div>
-                -->
+                
                 <div class="rows">
                     <p class="col1">Creative writing</p>
                     <p class="col2">06.01.24</p>
@@ -279,33 +248,13 @@
                     <p class="col2">06.05.24</p>
                     <div class="col3"><p><a href="writing/Bingo.pdf">Bingo</a></p></div>
                 </div>
-                <!--
+                
                 <div class="rows">
-                    <p class="col1">Poems</p>
-                    <p class="col2">30.01.24</p>
-                    <div class="col3"><p class="grow col3"><a href="feeling.html">Feeling</a></p></div>
+                    <p class="col1">Plays</p>
+                    <p class="col2">01.09.24</p>
+                    <div class="col3"><p><a href="writing/A Trial.pdf">An Evening With Mary Ann</a></p></div>
                 </div>
-                <div class="rows">
-                    <p class="col1"></p>
-                    <p class="col2">02.02.24</p>
-                    <div class="col3"><p><a href="a_conversion.html">A Conversion</a></p></div>
-                </div>
-                <div class="rows">
-                    <p class="col1"></p>
-                    <p class="col2">02.02.24</p>
-                    <div class="col3"><p><a href="rain.html">Rain</a></p></div>
-                </div>
-                <div class="rows">
-                    <p class="col1"></p>
-                    <p class="col2">07.02.24</p>
-                    <div class="col3"><p><a href="walls.html">Walls</a></p></div>
-                </div>
-                <div class="rows">
-                    <p class="col1"></p>
-                    <p class="col2">25.02.24</p>
-                    <div class="col3"><p><a href="looking.html">Looking</a></p></div>
-                </div>
-                -->
+                
             </div>
         </div>
         <script>

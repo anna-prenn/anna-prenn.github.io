@@ -64,6 +64,23 @@
                 z-index: 1; /* this is to make sure this is the top most element make this bigger if the cursor is going under other elements */
             }
 
+            .sub-item {
+                border: none;
+                font-size: 20px;
+                background-color: white;
+                display: inline-block;
+            }
+
+            .sub-item:hover {
+                cursor: none;
+            }
+
+            .container {
+                display: flex;
+                justify-content: right;
+                margin-right: 15%;
+            }
+
 
 
 
@@ -339,8 +356,10 @@
         <div id="page1">
             <div id="writing-pg1">
                 <div id="top-phone"><p id="writing-header">Anna<br>Prenowitz</p><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div></div>
-                <img class="mySlides" id="img_pg1" src="images/bathroom_43.JPG">
-                <img class="mySlides" src="images/museum_43.JPG">
+                <!--<img class="mySlides" id="img_pg1" src="images/bathroom_43.JPG">
+                <img class="mySlides" src="images/museum_43.JPG">-->
+                <img class="mySlides" src="images/sausages.png">
+                <img class="mySlides" src="images/another counter.png">
                 <div class="container">
                     <button class="sub-item" onclick="plusDivs(-1)"> < </button>
                     <button class="sub-item" onclick="plusDivs(1)"> > </button>

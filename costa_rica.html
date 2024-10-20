@@ -98,20 +98,35 @@
             }
 
             #page1 img {
-                width: 75%;
+                width: 90%;
                 height: auto;
                 /*margin: 10%;*/
-                margin-top: 4%;
-                align-self: center;
+                margin-top: 5%;
+                margin-left: 5%;
+                /*align-self: center;*/
             }
 
             
 
             #writing-pg1 img {
-                align-self: center;
+                /*align-self: center;*/
                 /*position: absolute;*/
-                margin-left: 12.5%;
+                /*margin-left: 12.5%;*/
 
+            }
+
+            
+
+           
+
+            #top-phone {
+                /*height: 10px;*/
+                width: 94%;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                
+                /*justify-content: end;*/
             }
 
             /*#writing-pg1 {
@@ -122,9 +137,12 @@
 
             #writing-header {
                 position: absolute;
-                top: 10%;
-                left: 5%;
-                
+                top: 0%;
+                margin-top: 1%;
+                padding-top: 0;
+                /*left: 5%;*/
+                justify-self: right;
+                /*background-color: green;*/
             }
 
             #menucont {
@@ -150,7 +168,6 @@
             }
 
             #writing-header {
-                /*font-family: 'Garamond';*/
                 font-weight: 500;
                 font-size: 35px;
             }
@@ -202,6 +219,8 @@
                     height: 100%;
 
                     position: static;
+                    display: flex;
+                    flex-direction: column;
                 }
 
                 #top-phone {
@@ -355,11 +374,13 @@
 
         <div id="page1">
             <div id="writing-pg1">
-                <div id="top-phone"><p id="writing-header">Anna<br>Prenowitz</p><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div></div>
+                <div id="top-phone"><p id="writing-header">Anna Prenowitz</p><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div></div>
                 <!--<img class="mySlides" id="img_pg1" src="images/bathroom_43.JPG">
                 <img class="mySlides" src="images/museum_43.JPG">-->
-                <img class="mySlides" src="images/sausages.png">
-                <img class="mySlides" src="images/another counter.png">
+                <div id="img-cont">
+                    <img class="mySlides" src="images/sausages.png">
+                    <img class="mySlides" src="images/another counter.png">
+                </div>
                 <div class="container">
                     <button class="sub-item" onclick="plusDivs(-1)"> < </button>
                     <button class="sub-item" onclick="plusDivs(1)"> > </button>

@@ -190,7 +190,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: left;
-                background-color: red;
             }
 
             #footer p {
@@ -204,6 +203,15 @@
             #footer ul {
                 display: flex;
                 flex-direction: row;
+                margin: 0;
+                padding: 0;
+                list-style:none;
+                
+            }
+            #footer li {
+                margin-right: 2%;
+                font-weight: 500;
+                font-size: 18px;
             }
 
             #icon {
@@ -358,7 +366,7 @@
                     width: 90%;
                     margin-left: 5%;
                     
-                    margin-top: 100%;
+                    /*margin-top: 100%;*/
                 }
 
                 #footer {
@@ -386,7 +394,7 @@
 
         <div id="page1">
             <div id="writing-pg1">
-                <div id="top-phone"><p id="writing-header">Anna Prenowitz</p><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div></div>
+                <div id="top-phone"><p id="writing-header"><a href="index.html">Anna Prenowitz</a></p><div id="span-cont"><span id="icon" onclick="menucont(this)">+</span></div></div>
                 <!--<img class="mySlides" id="img_pg1" src="images/bathroom_43.JPG">
                 <img class="mySlides" src="images/museum_43.JPG">-->
                 <div id="img-cont">
@@ -399,10 +407,8 @@
                 </div>
                 
                 <div id="menucont">
-                    <p class="menu"><a href="writing.html">Writing</a></p>
-                    <p class="menu"><a href="travel.html">Photography</a></p>
-                    <p class="menu"><a href="coming_soon.html">Film</a></p>
-                    <p class="menu"><a href="web_design3.html">Web design</a></p>
+                    <p class="menu"><a href="costa_rica.html">Writing</a></p>
+                    <p class="menu"><a href="self_portraits.html">Photography</a></p>
                 </div>
                 
             </div>
@@ -410,8 +416,8 @@
                 <hr>
                 <!--<p><a href="mailto:annaprenowitz@gmail.com">Email me.</a></p>-->
                 <ul>
-                    <li>Street-esque</li>
-                    <li>Portraits</li>
+                    <li><a href="costa_rica.html">Street-esque</a></li>
+                    <li><a href="self_portraits.html">Portraits</a></li>
                 </ul>
             </div>
         </div>

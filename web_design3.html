@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Anna Prenowitz</title>
+        <title>Anna Prenowitz — Web design</title>
         <meta charset="utf-8">
         <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,6 @@
             body {
                 margin: 0;
                 /*font-family: 'Cutive Mono', serif;*/
-                font-family: 'Garamond';
                 cursor: none;
             }
                 
@@ -76,7 +75,6 @@
             }
 
             #name {
-                font-family: 'Garamond';
                 font-weight: 500;
                 font-size: 35px;
                 align-self: end;
@@ -85,13 +83,19 @@
 
             #sites-cont {
                 margin-top: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
             }
 
             .sites {
                 display: flex;
                 flex-direction: row;
-                justify-self: end;
+                /*justify-self: end;*/
                 margin-left: 10%;
+
+                width: 90%;
             }
 
 
@@ -99,12 +103,14 @@
             .line {
                 border-bottom: 1px solid black;
                 /*margin-top: 5px;*/
+                /*width: 30%;*/
                 width: 30%;
                 height: 31px;
             }
 
             p {
                 line-height:20px
+                
             }
 
 
@@ -118,6 +124,17 @@
                     height: 100%;
                     align-content: flex-end;
                     margin-bottom: 10%;
+                }
+
+                .body {
+                    cursor: default;
+                }
+                .square {
+                    border: none;
+                }
+
+                #page1 {
+                    height: 100vh;
                 }
             }
 
